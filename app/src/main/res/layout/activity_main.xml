@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg1"
+    >
+
+    <RelativeLayout
+        android:id="@+id/search_weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:text="刷新"
+            android:textColor="#48d1cc"
+            android:background="#0048D1CC"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/edit_city"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="#8fbc8f"
+            android:hint="输入城市查询天气"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/search_w_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/edit_city"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="#48d1cc"
+            android:background="#0048D1CC"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_weather_layout">
+
+        <TextView
+            android:id="@+id/reporttime"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="时间"
+            android:textColor="#48d1cc"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/province"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/reporttime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="北京"
+            android:textColor="#48d1cc"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/province"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="北京"
+            android:textColor="#48d1cc"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/city"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="小雨"
+            android:textColor="#48d1cc"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/weather"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="#48d1cc"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/winddirection"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/temperature"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="东北"
+            android:textColor="#48d1cc"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/windpower"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/winddirection"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#48d1cc"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/windpower"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="28"
+            android:textColor="#48d1cc"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/chaxunlishi"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/humidity"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="查询历史："
+            android:textColor="#48d1cc"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/search_weather_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chaxunlishi"
+            >
+        <Button
+            android:id="@+id/chaxun1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#48d1cc"
+            android:background="#0048D1CC"
+            android:text="1"
+            />
+
+            <Button
+                android:id="@+id/chaxun2"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="150dp"
+                android:textColor="#48d1cc"
+                android:background="#0048D1CC"
+                android:layout_marginTop="10dp"
+                android:text="2"
+                 />
+
+            <Button
+                android:id="@+id/chaxun3"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#48d1cc"
+                android:background="#0048D1CC"
+                android:text="3"
+             />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
