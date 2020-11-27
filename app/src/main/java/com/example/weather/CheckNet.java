@@ -4,9 +4,6 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-/**
- * Created by xchen on 16/12/17.
- */
 
 public class CheckNet {
     public final static int NET_NONE = 0;
